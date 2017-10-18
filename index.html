@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=" rel="stylesheet"> -->
+</head>
+
+<body>
+    <div id ="headerWrapper">
+        <header id="titleHeader">
+            <img id="twitchLogo" src="styles/Twitch_White_RGB.png" alt="Twitch Stream Viewer">
+            <div id="selectStreamType">
+                <div class="radioPair">
+                    <input type="radio" class="streamSelector" name="streamSelector" 
+                        id="streamSelectAll" value="all" checked>
+                    <label for"streamSelectAll">All</label>
+                </div>
+                <div class="radioPair">
+                    <input type="radio" class="streamSelector" name="streamSelector" 
+                        id="streamSelectOnline" value="online">
+                    <label for"streamSelectOnline">Online</label>
+                </div>
+                <div class="radioPair">
+                    <input type="radio" class="streamSelector" name="streamSelector" 
+                        id="streamSelectOffline" value="offline">
+                    <label for"streamSelectOffline">Offline</label>
+                </div>  
+            </div>      
+        </header>
+    </div>
+    <section id="streamSection">
+        <div id="streamAdd">
+            <input id="streamAddInput" type="text">
+            <button id="streamAddButton">+</button>
+        </div>
+
+        <div id="resultSection">
+
+        </div>
+    </section>
+
+
+</body>
+
+</html>
